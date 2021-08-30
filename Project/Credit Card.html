@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Credit card</title>
+  <link rel="icon" href="./Banking_Project/images/ubs.jpg" type="image/x-icon">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/credit.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/02f4ecd993.js" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class=" container-fluid bg-light">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link " href="#">Open Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ATMs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Online Banking</a>
+        </li>
+        <li class="nav-item">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-xs-12">
+      <hr>
+    </div>
+
+    <div class="navbar navbar-fixed-top navbar-light d-sm-block ">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="Home.html">
+            <img src="./images/UBS_Logo_Semibold.png" href="#" width="85" height="30"
+              class="d-inline-block align-top">
+          </a>
+        </div>
+        <div class="container ">
+          <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active home" href="Home.html">Home <span class="sr-only">(current)</span></a>
+              <div class="dropdown">
+                <a class="dropbtn">Accounts</a>
+                <div class="dropdown-content">
+                  <a href="./current account/current.html">Current Account</a>
+                  <a href="./Salary account/salary.html">Salary Account</a>
+                  <a href="./savings account/savings.html">Savings Account</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a class="dropbtn">Deposits</a>
+                <div class="dropdown-content">
+                  <a href="./deposits/deposits.html">Fixed Deposits</a>
+                  <a href="#">Recurring Deposits</a>
+                  <a href="#">Express FD</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a class="dropbtn">Loans</a>
+                <div class="dropdown-content">
+                  <a href="./Banking_Project/Loans.html">Car Loan</a>
+                  <a href="#">Home Loan</a>
+                  <a href="#">Personal Loan</a>
+                  <a href="#">Business Loan</a>
+                  <a href="#">Education Loan</a>
+                  <a href="#">Gold Loan</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a class="dropbtn">Forex</a>
+                <div class="dropdown-content">
+                  <a href="./Banking_Project/forex.html">Forex Card</a>
+                  <a href="#">International Fund Transfer</a>
+                  <a href="#">Online Fund Transfer</a>
+                  <a href="./Online currency converter/convertor.html">Online Currency Converter</a>
+
+                </div>
+              </div>
+              <div class="dropdown">
+                <a class="dropbtn" href="Cards.html">Cards</a>
+                <div class="dropdown-content">
+                  <a href="Credit Card.html">Credit Cards</a>
+                  <a href="debit.html">Debit Cards</a>
+                  <a href="prepaid.html">Pre-paid Cards</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a class="dropbtn">Investments</a>
+                <div class="dropdown-content">
+                  <a href="#">Mutual Funds</a>
+                  <a href="#">Demat Account</a>
+                  <a href="#">IPO Smart</a>
+                </div>
+              </div>
+              <a class=" about nav-item nav-link active" href="About.html">About</a>
+            </div>
+            <div class="container" id="btnlog">
+              <div class="dropdown">
+                <button type="button" class="btn btn-danger"><span>Login</span></button>
+                <div class="dropdown-content">
+                  <a href="login.html">Personal Login</a>
+                  <a href="login.html">Corporate Login</a>
+                  <a href="login.html">Register</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12">
+      <hr>
+    </div>
+  </header>
+
+  <!-- carousel -->
+  <div class="caro container-fluid bg-light">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#">
+            <img src="./images/banner1.jpg" alt="Home Loan">
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#">
+            <img src="./images/banner2.png" alt="Car Loan">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- carousel -->
+
+  <!-- Text -->
+  <div class="container h4 mt-4 mb-4">
+    <div class="row">
+      <div class="col-md-6">UBS Credit card</div>
+      <div class="cbtn col-md-6">
+        <button type="button" class="btn btn-danger"><span>Pay Credit Bill</span></button>
+      </div>
+    </div>
+  </div>
+  <!-- Text -->
+
+  <!-- card -->
+  <div class="container">
+    <div classs="row">
+      <ul>
+        <li class="list-inline-item">
+          <div class="card" style="width: 17rem;">
+            <div class="card-body">
+              <h5 class="card-title">UBS Ace Credit Card</h5>
+              <p class="card-text">Get Unlimited Cashback
+                5% cashback on bill payments & recharges on Google Pay
+                4% cashback on Swiggy, Zomato & Ola
+                2% cashback on other spends</p>
+              <a href="#" class="btn btn-danger">Apply now</a>
+            </div>
+          </div>
+        </li>
+        <li class="list-inline-item">
+          <div class="card" style="width: 17rem;">
+            <div class="card-body">
+              <h5 class="card-title">Flipkart UBS Bank Credit Card</h5>
+              <p class="card-text">Special Service
+                Unlimited cashback on all your spends
+                Cashback Up to 5% cashback with no upper limit Top Features
+                Rs.2900 worth of joining and activation benefits</p>
+              <a href="#" class="btn btn-danger">Apply now</a>
+            </div>
+          </div>
+        </li>
+        <li class="list-inline-item">
+          <div class="card" style="width: 17rem;">
+            <div class="card-body">
+              <h5 class="card-title">Ubs Bank Privilege Credit Card</h5>
+              <p class="card-text">Special Service
+                Shopping or Travel benefits
+                EDGE REWARDS Points
+                10 points on Domestic / International spends for every Rs. 200 spent
+              </p>
+              <a href="#" class="btn btn-danger">Apply now</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div classs="row"></div>
+    <ul>
+      <li class="list-inline-item">
+        <div class="card" style="width: 17rem;">
+          <div class="card-body">
+            <h5 class="card-title">UBS Bank Select Credit Card</h5>
+            <p class="card-text">Special Service
+              Amazon voucher worth Rs 2000 on activation & Priority Pass membership
+              EDGE REWARDS Points
+              10 EDGE points on every Rs 200 spent and 2X on Retail shopping
+            </p>
+            <a href="#" class="btn btn-danger">Apply now</a>
+          </div>
+        </div>
+      </li>
+      <li class="list-inline-item">
+        <div class="card" style="width: 17rem;">
+          <div class="card-body">
+            <h5 class="card-title">UBS Bank MY Zone Credit Card</h5>
+            <p class="card-text">Special Service
+              Enjoy 40% off on Swiggy and complimentary SonyLiv Premium subscription
+              EDGE REWARDS Points
+              4 points with every Rs. 200 spent
+              4 complimentary Lounge Access.</p>
+            <a href="#" class="btn btn-danger">Apply now</a>
+          </div>
+        </div>
+      </li>
+      <li class="list-inline-item">
+        <div class="card" style="width: 17rem;">
+          <div class="card-body">
+            <h5 class="card-title">UBS Bank Neo Credit Card</h5>
+            <p class="card-text">Activation Benefits
+              Amazon Gift voucher worth Rs.250, Zomato Pro 3 months subscription, Grofers and 1mg 6 months
+              subscription on 1st spend within 30 days
+              EDGE REWARDS Points
+            </p>
+            <a href="#" class="btn btn-danger">Apply now</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <!-- card -->
+  <div class="text-center mt-5 mb-5">
+    <h2>Credit Card Interest Rates by Top Banks</h2>
+  </div>
+  <!--List-->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+            href="#list-UBS" role="tab" aria-controls="home">UBS Bank</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-HDFC"
+            role="tab" aria-controls="profile">HDFC Bank</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-ICIC"
+            role="tab" aria-controls="messages">ICICI Bank</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-SBI"
+            role="tab" aria-controls="settings">SBI Bank</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-Axis"
+            role="tab" aria-controls="settings">Axis Bank</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-UBS" role="tabpanel" aria-labelledby="list-home-list">
+            <h5>Monthly Percentage Rate (MPR)%</h5>
+            <p>1.20% to 2.4%</p>
+            <h5>Annual Percentage Rate (APR)%</h5>
+            <p>14.40% to 28.8%</p>
+          </div>
+          <div class="tab-pane fade" id="list-HDFC" role="tabpanel" aria-labelledby="list-profile-list">
+            <h5>Monthly Percentage Rate (MPR)%</h5>
+            <p>3.40%</p>
+            <h5>Annual Percentage Rate (APR)%</h5>
+            <p>40.80%</p>
+          </div>
+          <div class="tab-pane fade" id="list-ICIC" role="tabpanel" aria-labelledby="list-messages-list">
+            <h5>Monthly Percentage Rate (MPR)%</h5>
+            <p>2.49% to 3.67%</p>
+            <h5>Annual Percentage Rate (APR)%</h5>
+            <p>29.88% to 44%</p>
+          </div>
+          <div class="tab-pane fade" id="list-SBI" role="tabpanel" aria-labelledby="list-settings-list">
+            <h5>Monthly Percentage Rate (MPR)%</h5>
+            <p>Up to 3.50%</p>
+            <h5>Annual Percentage Rate (APR)%</h5>
+            <p>Up to 42%</p>
+          </div>
+          <div class="tab-pane fade" id="list-Axis" role="tabpanel" aria-labelledby="list-settings-list">
+            <h5>Monthly Percentage Rate (MPR)%</h5>
+            <p>3.40%</p>
+            <h5>Annual Percentage Rate (APR)%</h5>
+            <p>40.8%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <!-- More -->
+  <div class="text-center mt-5 mb-5">
+    <h2>More about Credit Cards</h2>
+  </div>
+  <!-- More -->
+
+  <!-- Collapse -->
+  <div class="container mb-4">
+    <div id="accordion">
+      <div class="card c1">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">
+              What is a Credit Card?
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            A credit card is an instrument to help you make instant credit based transactions.
+            Unlike debit cards which are linked to your bank accounts and debit the corresponding amount for every
+            transaction, credit cards offer you the flexibility to make transactions on credit independent of your
+            account balance.
+            These amounts however are repayable at the end of a pre-specified credit period, and each credit card
+            involves a credit limit beyond which transactions cannot be made.
+          </div>
+        </div>
+      </div>
+      <div class="card c1">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              How to Apply for a Credit Card?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <h6>You can apply for a credit card with Ubs Bank:</h6>
+            <p>1. Online by checking out Ubs Bank credit cards</p>
+            <p>2. By getting in touch with your relationship manager</p>
+            <p>3. Or visiting your nearest Ubs Bank branch</p>
+          </div>
+        </div>
+      </div>
+      <div class="card c1">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
+              How to check Credit Card Eligibility?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            <h6>To be eligible for a credit card with Ubs Bank:</h6>
+            <p>1. You must be over 18 years of age</p>
+            <p>2. You must be a resident of India</p>
+            <p>3. In case you are the primary card holder, you must have a regular source of income.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card c1">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+              aria-expanded="false" aria-controls="collapseFour">
+              What are the benefits of an Ubs Bank Credit Card?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="card-body">
+            <p>Ubs Bank Credit Cards are designed keeping in mind the various uses and lifestyles customers may adhere
+              to.
+              With exclusive benefits on transaction for food, travel, e-commerce and or a combination of these.</p>
+            <h6>Some advantages of Ubs Bank credit cards include:</h6>
+            <p>1. Complementary flight tickets</p>
+            <p>2. Discounts on movie tickets</p>
+            <p>3. Waiver of fuel surcharges</p>
+            <p>4. Access to airport lounges</p>
+            <p>5. Discounted deals on hotel bookings and restaurant orders</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <hr>
+  <footer class="page-footer font-small mdb-color pt-4">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left mt-3 pb-3">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">UBS</h6>
+          <p>UBS offers high net worth and affluent individuals around the world a complete range of tailored advice and
+            investment services.</p>
+        </div>
+        <hr class="w-100 clearfix d-md-none">
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Loans</h6>
+          <p>
+            <a href="#!">Car Loan</a>
+          </p>
+          <p>
+            <a href="#!">Personal Loan</a>
+          </p>
+          <p>
+            <a href="#!">Gold Loan</a>
+          </p>
+          <p>
+            <a href="#!">Business Loan</a>
+          </p>
+        </div>
+        <hr class="w-100 clearfix d-md-none">
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Investments</h6>
+          <p>
+            <a href="#!">Mutual Funds</a>
+          </p>
+          <p>
+            <a href="#!">Demat Account</a>
+          </p>
+          <p>
+            <a href="#!">IPO Smart</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Forex</h6>
+          <p>
+            <a href="forex.html">Forex Card</a>
+          </p>
+          <p>
+            <a href="#!">International Funds Transfer</a>
+          </p>
+          <p>
+            <a href="#!">Online Funds Transfer</a>
+          </p>
+        </div>
+        <hr class="w-100 clearfix d-md-none">
+        <div class="col-md-4 col-lg-3 col-xl-3   mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p>
+            <i class="fas fa-home mr-3"></i> New York, NY 10012, US
+          </p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@gmail.com
+          </p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 01 234 567 88
+          </p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 01 234 567 89
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="row d-flex align-items-center">
+        <div class="col-md-7 col-lg-8">
+          <p class="text-center text-md-left">© 2020 Copyright:
+            <a href="#">
+              <strong> UBS.com</strong>
+            </a>
+          </p>
+        </div>
+        <div class="col-md-5 col-lg-4 ml-lg-0">
+
+
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>
