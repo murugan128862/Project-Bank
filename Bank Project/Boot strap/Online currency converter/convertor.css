@@ -1,0 +1,32 @@
+
+
+.jumbotron 
+{
+    cursor: pointer;
+    padding-bottom: 1pt;
+    padding-left: 3pt;
+    padding-top: 3pt;   
+}
+
+
+
+.form-group 
+{
+    border: 3px solid red;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-bottom: auto;
+    margin-top:auto;
+    margin-right: 100pt;
+    margin-left: 1pt;
+}
+
+input
+{
+font-size: 23px;
+border: 5px solid;
+border-radius: 9px;
+width: auto;
+}
+
