@@ -1,0 +1,52 @@
+.jumbotron
+{
+    height: 35%;
+    padding-top: 10pt;
+}
+
+.col-md-4
+{
+    /* border: 2px solid rgb(26, 26, 25); */
+    display: inline-block;
+    border-radius: 20pt;
+    /* padding-top: 18pt; */
+}
+
+.jumbotron 
+{
+    cursor: pointer;
+    padding-bottom: 1pt;
+    padding-left: 3pt;
+    padding-top: 3pt;   
+}
+
+tr:hover 
+{
+    background-color:rgb(240,230,140);
+}
+
+.mb-1, .my-1 
+{
+    margin-bottom: 1.25rem !important;
+    margin-top: 0.95rem;
+}
+.mb-5, .my-5
+{
+    margin-bottom: -4rem !important;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+@media only screen and (max-width: 875px)
+ {
+
+.jumbotron 
+{
+      width: 100%;
+}
+}
+.nav-1
+{
+    margin-right: 0;
+}

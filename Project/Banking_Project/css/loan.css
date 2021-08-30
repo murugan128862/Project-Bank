@@ -1,0 +1,44 @@
+.fusion-carousel .fusion-carousel-item img {
+    width: auto;
+    height: auto;
+    max-height: auto;
+    object-fit: cover;
+}
+
+.jumbotron
+{
+    width: 100%;
+height: 35%;
+padding-top: 10pt;
+}
+
+.col-md-3
+{
+   
+ /* border: 2px solid rgb(26, 25, 25);  */
+display: inline-block;
+border-radius: 8pt;
+/* padding-top: 18pt; */
+
+}
+statement
+{
+    margin-left: 45pt;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+@media only screen and (max-width: 875px) 
+{
+
+.jumbotron 
+{
+      width: 100%;
+}
+}
+.nav-1
+{
+    margin-right: 0;
+}
