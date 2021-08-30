@@ -1,0 +1,393 @@
+<html>
+
+<head>
+  <title>Online Currency Converter </title>
+  
+  <link rel="icon" href="../Banking_Project/images/ubs.jpg" type="image/x-icon">
+  <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet" type="text/css">
+  <link href="css/convertor.css" rel="stylesheet" type="text/css">
+
+  <script src="js/convert.js"></script>
+  <script src="https://kit.fontawesome.com/cb2600c0e3.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/02f4ecd993.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class=" container-fluid bg-light">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link " href="#">Open Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ATMs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Online Banking</a>
+        </li>
+        <li class="nav-item">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-xs-12">
+      <hr>
+    </div>
+
+    <div class="navbar navbar-fixed-top navbar-light d-sm-block ">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../Home.html">
+            <img src="../images/UBS_Logo_Semibold.png" href="#" width="85" height="30" class="d-inline-block align-top">
+          </a>
+        </div>
+        <div class="container ">
+          <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active home" href="#">Home <span class="sr-only">(current)</span></a>
+              <div class="dropdown">
+                <a class="dropbtn">Accounts</a>
+                <div class="dropdown-content">
+                  <a href="#">Current Account</a>
+                  <a href="#">Salary Account</a>
+                  <a href="#">Savings Account</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a class="dropbtn">Deposits</a>
+                <div class="dropdown-content">
+                  <a href="#">Fixed Deposits</a>
+                  <a href="#">Recurring Deposits</a>
+                  <a href="#">Express FD</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a class="dropbtn">Loans</a>
+                <div class="dropdown-content">
+                  <a href="#">Car Loan</a>
+                  <a href="#">Home Loan</a>
+                  <a href="#">Personal Loan</a>
+                  <a href="#">Business Loan</a>
+                  <a href="#">Education Loan</a>
+                  <a href="#">Gold Loan</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a class="dropbtn">Forex</a>
+                <div class="dropdown-content">
+                  <a href="#">Forex Card</a>
+                  <a href="#">International Fund Transfer</a>
+                  <a href="#">Online Fund Transfer</a>
+                  <a href="#">Online Currency Converter</a>
+
+                </div>
+              </div>
+              <div class="dropdown">
+                <a class="dropbtn">Cards</a>
+                <div class="dropdown-content">
+                  <a href="#">Credit Cards</a>
+                  <a href="#">Debit Cards</a>
+                  <a href="#">Pre-paid Cards</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a class="dropbtn">Investments</a>
+                <div class="dropdown-content">
+                  <a href="#">Mutual Funds</a>
+                  <a href="#">Demat Account</a>
+                  <a href="#">IPO Smart</a>
+                </div>
+              </div>
+              <a class=" about nav-item nav-link active" href="#">About</a>
+            </div>
+            <div class="container" id="btnlog">
+              <div class="dropdown">
+                <button type="button" class="btn btn-danger"><span>Login</span></button>
+                <div class="dropdown-content">
+                  <a href="#">Personal Login</a>
+                  <a href="#">Corporate Login</a>
+                  <a href="#">Register</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12">
+      <hr>
+    </div>
+  </header>
+
+  <div class="container-fluid bck">
+    <img src="images/curbanner.jpg" class="img-fluid" alt="Currency_image">
+  </div>
+
+
+  <div class="form-group mt-3">
+    <form name="converter" autocomplete="off">
+      <h3>
+        <center>Know currency exchange rates here for conversion</center>
+      </h3>
+      <br>
+      <center>
+        <table>
+
+          <tr>
+            <td><b>Indian Rupee</b></td>
+            <td><input type="text" name="rupee" placeholder="INR" onChange="INRConverter()" /></td>
+          </tr>
+          <tr>
+            <td><b>USA Dollar</b> </td>
+            <td><input type="text" name="dollar" placeholder="USD" onChange="USDConverter()" /></td>
+          </tr>
+          <tr>
+            <td><b>Japanese Yen</b> </td>
+            <td><input type="text" name="yen" placeholder="JPY" onChange="JPYConverter()" /></td>
+          </tr>
+          <tr>
+            <td><b>British Pound</b></td>
+            <td><input type="text" name="pound" placeholder="GBP" onChange="GBPConverter()" /></td>
+          </tr>
+
+          <tr>
+            <td><b>Euro </b> </td>
+            <td><input type="text" name="euro" placeholder="EUR" onChange="EURConverter()" /></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <br>
+              <input type="button" class="btn btn-danger" value="Convert Now" />
+
+
+              <input type="reset" class="btn btn-danger" value="Reset" />
+            </td>
+          </tr>
+      </center>
+      </table>
+
+    </form>
+  </div>
+
+  <div class="jumbotron" style="height: auto ; padding-left: 20pt;">
+    <h3>
+      <font color="red">Online Currency Convertor</font>
+    </h3>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+      its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+      distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+      Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+      default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.making it
+      look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+      default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+  </div>
+  </div>
+
+  <section id="statement" class="container mt-4">
+    <div class="row text-center">
+
+
+      <div class="col-md-3">
+        <img src="images/history22.jpg" width="100px" height="50px">
+        <br><br>
+        <h4>Historical Rates</h4>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at its layout.</p>
+
+        <button type="button" class="btn btn-danger">More Info</button>
+        <br><br>
+      </div>
+      <div class="col-md-3">
+        <img src="images/charts.jpg" width="100px" height="50px">
+        <br><br>
+        <h4>Currency Charts</h4>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at its layout.</p>
+        <button type="button" class="btn btn-danger">More Info</button>
+        <br><br>
+      </div>
+      <div class="col-md-3">
+        <img src="images/email.png" width="100px" height="50px">
+        <br><br>
+        <h4>Email Alerts</h4>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at its layout.</p>
+        <button type="button" class="btn btn-danger">More Info</button>
+        <br><br>
+      </div>
+      <div class="col-md-3">
+        <img src="images/widget.jpeg" width="100px" height="50px">
+        <br><br>
+
+        <h4>Coverter Widget </h4>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at its layout.</p>
+        <button type="button" class="btn btn-danger">More Info</button>
+        <br><br>
+      </div>
+    </div>
+  </section>
+  <div class="jumbotron" style="height: auto ; padding-left: 20pt;">
+    <h3>
+      <font color="red">Forex and Exchange Rates</font>
+    </h3>
+    <p>Currencies used in different countries are rarely, if ever, exactly equal in value. As a result, exchange rates
+      (the rate at which a currency is exchanged for another)
+      exist to enable the equal exchange of currencies. Real-time exchange rates are supplied by the foreign exchange
+      market (forex), the same place where most currency transactions
+      take place. The forex is a global, decentralized, over-the-counter market for the trading of currencies. Each day,
+      trillions of dollars (US) worth of currency are traded.
+      The market functions at high speeds, with exchange rates changing every second. The most common forex transactions
+      are exchanges between the U.S. dollar and European euro,
+      the U.S. dollar and the Japanese yen, and the U.S. dollar to the British pound Sterling.</p>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+      its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+      distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+      Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+      default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.making it
+      look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+      default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+  </div>
+  </div>
+
+  <hr>
+  <footer class="page-footer font-small mdb-color pt-4">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left mt-3 pb-3">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">UBS</h6>
+          <p>UBS offers high net worth and affluent individuals around the world a complete range of tailored advice and
+            investment services.</p>
+        </div>
+        <hr class="w-100 clearfix d-md-none">
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Loans</h6>
+          <p>
+            <a href="#!">Car Loan</a>
+          </p>
+          <p>
+            <a href="#!">Personal Loan</a>
+          </p>
+          <p>
+            <a href="#!">Gold Loan</a>
+          </p>
+          <p>
+            <a href="#!">Business Loan</a>
+          </p>
+        </div>
+        <hr class="w-100 clearfix d-md-none">
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Investments</h6>
+          <p>
+            <a href="#!">Mutual Funds</a>
+          </p>
+          <p>
+            <a href="#!">Demat Account</a>
+          </p>
+          <p>
+            <a href="#!">IPO Smart</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Forex</h6>
+          <p>
+            <a href="#!">Forex Card</a>
+          </p>
+          <p>
+            <a href="#!">International Funds Transfer</a>
+          </p>
+          <p>
+            <a href="#!">Online Funds Transfer</a>
+          </p>
+        </div>
+        <hr class="w-100 clearfix d-md-none">
+        <div class="col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p>
+            <i class="fas fa-home mr-3"></i> New York, NY 10012, US
+          </p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@gmail.com
+          </p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 01 234 567 88
+          </p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 01 234 567 89
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="row d-flex align-items-center">
+        <div class="col-md-7 col-lg-8">
+          <p class="text-center text-md-left">© 2021 Copyright:
+            <a href="#">
+              <strong> UBS.com</strong>
+            </a>
+          </p>
+        </div>
+        <div class="col-md-5 col-lg-4 ml-lg-0">
+
+
+          <div class="text-center text-md-right ">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
